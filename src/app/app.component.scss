@@ -1,0 +1,44 @@
+.container {
+
+  height: 100vh;
+  padding: 0 20px;
+
+  .button-add {
+    padding: 10px;
+    float: right;
+    margin:20px  10px;
+  }
+  .circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+  }
+  .color-green{
+    color: greenyellow;
+  }
+  .button-done{
+    border-radius: 50%;
+  }
+
+  table {
+    width: 100%;
+    
+  }
+
+  .form-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+ 
+  }
+  .grid-item{
+    margin: 10px 20px;
+}
+  .action{
+    display: flex;
+  }
+}

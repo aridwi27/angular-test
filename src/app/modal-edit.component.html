@@ -1,0 +1,58 @@
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()" class="form-container">
+  <div class="grid-item">
+    <mat-form-field class="form-element">
+      <mat-label>_id</mat-label>
+      <input id="first-name" matInput type="text" formControlName="_id" />
+    </mat-form-field>
+  </div>
+
+  <div class="grid-item">
+    <mat-form-field class="form-element">
+      <mat-label>email</mat-label>
+      <input matInput type="email" formControlName="email" />
+    </mat-form-field>
+  </div>
+  <div class="grid-item">
+    <mat-form-field class="form-element">
+      <mat-label>civility</mat-label>
+      <input matInput type="text" formControlName="civility" />
+    </mat-form-field>
+  </div>
+
+  <div class="grid-item">
+    <mat-form-field class="form-element">
+      <mat-label>first_name</mat-label>
+      <input matInput type="text" formControlName="first_name" />
+    </mat-form-field>
+  </div>
+  <div class="grid-item">
+    <mat-form-field class="form-element">
+      <mat-label>last_name</mat-label>
+      <input type="text" matInput formControlName="last_name" />
+    </mat-form-field>
+  </div>
+  <div class="grid-item">
+    <mat-form-field class="form-element">
+      <mat-label>user status</mat-label>
+      <input type="text" matInput formControlName="user_status" />
+    </mat-form-field>
+  </div>
+
+  <div formGroupName="company">
+    <h2>company</h2>
+
+    <mat-form-field class="form-element">
+      <mat-label>name</mat-label>
+      <input matInput type="text" formControlName="name" />
+    </mat-form-field>
+    <mat-form-field class="form-element">
+      <mat-label>user_type</mat-label>
+      <input type="text" matInput formControlName="user_type" />
+    </mat-form-field>
+  </div>
+
+  <!-- <label for="last-name">Last Name: </label>
+        <input id="last-name" type="text" formControlName="lastName"> -->
+
+  <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+</form>
